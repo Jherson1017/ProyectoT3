@@ -41,11 +41,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdivinaLaPalabra.cs" />
     <Compile Include="JuegoPPT.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SupervivenciaZombi.cs" />
     <Compile Include="TresEnRaya.cs" />
     <Compile Include="TriviaCultural.cs" />
+    <Compile Include="TriviaProgramacion.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

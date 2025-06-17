@@ -15,14 +15,16 @@ namespace ProyectoT3
             {
                 Console.Clear();
                 Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine("=======================================");
-                Console.WriteLine("         MENÚ DE JUEGOS INTERACTIVOS   ");
-                Console.WriteLine("=======================================");
+                Console.WriteLine("=============================================");
+                Console.WriteLine("         MENÚ DE JUEGOS INTERACTIVOS         ");
+                Console.WriteLine("=============================================");
                 Console.ForegroundColor= ConsoleColor.Green;
                 Console.WriteLine("[1] El juego de la fábrica de juguetes embrujada");
-                Console.WriteLine("[2] Trivia de Cultura General");
-                Console.WriteLine("[3] Piedra, Papel o Tijera");
-                Console.WriteLine("[4] Tres en raya");
+                Console.WriteLine("[2] Trivia de cultura general");
+                Console.WriteLine("[3] Trivia  de programacion");
+                Console.WriteLine("[4] Piedra, papel o tijera");
+                Console.WriteLine("[5] Tres en raya");
+                Console.WriteLine("[6] Adivina la palabra ");
                 Console.WriteLine("[0] Salir");
                 Console.ResetColor();
                 Console.Write("Selecciona una opción: ");
@@ -34,13 +36,19 @@ namespace ProyectoT3
                         new SupervivenciaZombi().Iniciar();
                         break;
                     case "2":
-                        new TriviaCultural().Iniciar();
+                        new TriviaCultural().Iniciar(); 
                         break;
                     case "3":
-                        new JuegoPPT().Inicio();
+                        new TriviaProgramacion().Iniciar();
                         break;
                     case "4":
+                        new JuegoPPT().Inicio();
+                        break;
+                    case "5":
                         new TresEnRaya().Iniciar();
+                        break;
+                    case "6":
+                        new AdivinaLaPalabra().iniciar();
                         break;
                     case "0":
                         Console.ForegroundColor= ConsoleColor.Green;
